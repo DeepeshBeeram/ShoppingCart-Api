@@ -10,7 +10,8 @@ using LinkedInProject.Helpers;
 
 namespace LinkedInProject.Controllers
 {
-    [Route("api/[controller]")]
+    [ApiVersion("1.0")]
+    [Route("v{v:apiVersion}/[controller]")]
     [ApiController]
     public class ProductController : ControllerBase
     {
